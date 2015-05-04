@@ -1,0 +1,36 @@
+Input
+
+The main() function is interactive such that the user can enqueue and dequeue a set of desired
+integers. The input consists of a character (’e’ for enqueue, ’d’ for dequeue, and ’q’ for quit) and
+an integer to enqueue. 
+
+int main () {
+mikeQ q; // create a Mike queue
+int item; // item to add to queue
+char ch; // character code
+cout << "Enter e(nter), d(equeue), or q(uit): ";
+cin >> ch;
+  while (ch != ’q’) {
+    if (ch == ’e’)
+      if (!q.full()) {
+        cout << "number: ";
+        cin >> item;
+        q.enMike (item);
+      } else
+        cout << "Error - queue is full" << endl;
+    else if (ch == ’d’)
+      if (!q.empty()){
+        cout << q.front() << endl;
+        q.deMike(1);
+    } else
+        cout << "Error - empty queue" << endl;
+    else
+      cout << "Error in code - ignored" << endl;
+      cout << "Enter e(nter), d(equeue), or q(uit): ";
+      cin >> ch;
+  }//while
+
+return 0;
+}
+
+
