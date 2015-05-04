@@ -22,7 +22,7 @@ cin >> ch;
       if (!q.empty()){
         cout << q.front() << endl;
         q.deMike(1);
-    } else
+      } else
         cout << "Error - empty queue" << endl;
     else
       cout << "Error in code - ignored" << endl;
