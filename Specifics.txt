@@ -1,0 +1,20 @@
+Specifics
+
+• Create a class queue implemented as a circular array that stores integers. The methods to be
+implemented should be called enqueue(x), dequeue(), front(), empty(), and full().
+The maximum number of items that need to be stored is 100. This class should contain
+only those private data members necessary to implement a normal queue. No additional
+methods should be defined in this class.
+
+• Create a derived class of queue called mikeQ. This class should have access to the methods
+of the queue class and include two new methods:
+– enMike (x) - enqueue the integer x in the normal manner except if it is 10 or greater
+than the front of the queue, then insert the value at the front rather than the usual rear.
+– deMike (x) - dequeue x items from the front.
+
+• The mikeQ class should contain only the two new methods described above. That
+is, this class should not have any additional class variables or methods; all functionality must
+be accomplished by calling the methods of the queue class.
+
+• At the bottom of the given main(), add some additional code to display and remove all
+remaining items in the queue, one integer per line.
